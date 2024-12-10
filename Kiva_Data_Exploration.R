@@ -97,10 +97,18 @@ print(info_by_sector)
 # List of Distinct Sectors (more broad)
 df_distinct_sector <- df_clean$sector %>% unique()
 df_distinct_sector
+length(unique(df_clean$sector))
+
 
 # List of Distinct Activities (more specific)
 df_distinct_activity <- df_clean$activity %>% unique()
 df_distinct_activity
+length(unique(df_clean$activity))
+
+
+# List of Distinct Uses (SUPER specific)
+df_distinct_use <- df_clean$use %>% unique())
+length(unique(df_clean$use))
 
 # Lets see which actitivies are catagorized as which sectors
 sector_activities <- df_clean %>%

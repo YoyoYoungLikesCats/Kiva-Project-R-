@@ -18,7 +18,9 @@ loans_lenders <- read.csv("./Kiva_Raw_csv/loans_lenders.csv")
     # field_descriptions <- read_xlsx("./Kiva_Raw_csv/kiva_field_descriptions.xlsx") 
     # ^^ Didnt really end up using that for now
     
- 
+ View(lenders)
+
+
 #-----------------------------------Cleaning----------------------------------------------------------
     
 # Have to remove the "." first in the field names and making it lowercase for consistency (and so I can use JOIN functions)
@@ -144,7 +146,7 @@ df_clean$date_char <- format(df_clean$date, format = "%B %d, %Y") # adding a col
 df_clean <- df_clean %>%
   select(-date)
 
-# Taking a look at the other dataframe we are working with 
+# Taking a look at the other data frame we are working with 
 #View(lenders)
 colSums(is.na(lenders)) # well this doesn't work, bc some of the values are empty (" "), not Null (n/a)
 colSums(lenders != "" & !is.na(lenders)) # ok, so there's a lot of non responses, but I'll leave it for now
