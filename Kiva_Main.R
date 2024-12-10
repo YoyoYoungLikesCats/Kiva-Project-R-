@@ -15,7 +15,8 @@ loan_theme_by_region <- read.csv("./Kiva_Raw_csv/loan_themes_by_region.csv")
 lenders <- read.csv("./Kiva_Raw_csv/lenders.csv")
 loans_lenders <- read.csv("./Kiva_Raw_csv/loans_lenders.csv")
     # separate excel file for detailed description of what each field represents
-    field_descriptions <- read_xlsx("./Kiva_Raw_csv/kiva_field_descriptions.xlsx")
+    # field_descriptions <- read_xlsx("./Kiva_Raw_csv/kiva_field_descriptions.xlsx") 
+    # ^^ Didnt really end up using that for now
     
  
 #-----------------------------------Cleaning----------------------------------------------------------
@@ -135,7 +136,7 @@ colSums(is.na(df_clean) | df_clean == "")
 df_cleaned_main <- df_clean %>%
   select(-lenders,-lender_count, everything(), lender_count,lenders)
 View(df_cleaned_main)
-df_clean <- df_cleaned_main
+df_clean <- df_cleaned_main 
 
 # Making date more readable to a human
 df_clean$date <- as.Date(df_clean$date, format = "%Y-%m-%d") # formatting original char to date
