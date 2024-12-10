@@ -7,15 +7,15 @@ library(tidyverse)
 library(sqldf)
 library(scales)  # For label formatting in one of the plots (I think its in tidyverse already)
 
-# Importing Raw Data (Put on Github and change all of the Read Links for reproducability)
-loans_df <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/kiva_loans.csv")
-mpi_region <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/kiva_mpi_region_locations.csv")
-loan_theme <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/loan_theme_ids.csv") 
-loan_theme_by_region <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/loan_themes_by_region.csv")
-lenders <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/lenders.csv")
-loans_lenders <- read.csv("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/loans_lenders.csv")
+# Importing Raw Data (Put on Github and change all of the Read Links)
+loans_df <- read.csv("./Kiva_Raw_csv/kiva_loans.csv")
+mpi_region <- read.csv("./Kiva_Raw_csv/kiva_mpi_region_locations.csv")
+loan_theme <- read.csv("./Kiva_Raw_csv/loan_theme_ids.csv") 
+loan_theme_by_region <- read.csv("./Kiva_Raw_csv/loan_themes_by_region.csv")
+lenders <- read.csv("./Kiva_Raw_csv/lenders.csv")
+loans_lenders <- read.csv("./Kiva_Raw_csv/loans_lenders.csv")
     # separate excel file for detailed description of what each field represents
-    field_descriptions <- read_xlsx("/Users/yoyo/Desktop/BUAN 314/KIva Data Raw/kiva_field_descriptions.xlsx")
+    field_descriptions <- read_xlsx("./Kiva_Raw_csv/kiva_field_descriptions.xlsx")
     
  
 #-----------------------------------Cleaning----------------------------------------------------------
