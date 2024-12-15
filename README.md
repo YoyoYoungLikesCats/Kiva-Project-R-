@@ -1,6 +1,6 @@
 BUAN 314 Final Project
 
-(https://docs.google.com/spreadsheets/d/1tY0VWUgdFUvWLxXB2arzUOMeZpv_yiLG/edit?usp=drive_link&ouid=116484302912750400389&rtpof=true&sd=true)
+(https://drive.google.com/drive/folders/1Qimg6NTflcWK7nrS5MShR9E5kjucDWWT?usp=drive_link)
 Link to Drive Folder Conataining:
   Written Report
   TIDY Data
