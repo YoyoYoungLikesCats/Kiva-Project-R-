@@ -18,8 +18,16 @@ loans_lenders <- read.csv("./Kiva_Raw_csv/loans_lenders.csv")
     # field_descriptions <- read_xlsx("./Kiva_Raw_csv/kiva_field_descriptions.xlsx") 
     # ^^ Didnt really end up using that for now
     
- View(lenders)
+dim(loans_df)
+dim(mpi_region)
+dim(loan_theme)
+dim(loan_theme_by_region)
+dim(lenders)
+dim(loans_lenders)
 
+ 
+ 
+ 
 
 #-----------------------------------Cleaning----------------------------------------------------------
     
