@@ -171,6 +171,10 @@ dim(non_null_test) # only 16k answers
 View(df_clean) # This is the main data set 
 colSums(is.na(df_clean) | df_clean == "")
 
+# Making an excel file of cleaned data to share to other group members
+# write_xlsx(df_clean, "cleaned_forSharing1")
+
+
 View(lenders) # This is the info on each individual lender, might use in analysis
 colSums(lenders != "" & !is.na(lenders)) # ok, so there's a lot of non responses
 
