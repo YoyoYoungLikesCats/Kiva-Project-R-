@@ -162,9 +162,7 @@ colSums(lenders != "" & !is.na(lenders)) # ok, so there's a lot of non responses
 # This is a data frame of complete cases
 non_null_test <- lenders[complete.cases(lenders) & !apply(lenders == "", 1, any), ]
 #View(non_null_test)
-dim(non_null_test) # only 16k answers
-
-
+dim(non_null_test) # only 16k answers of complete rows, hmmm.........
 
 
 #-----------------------------------------Final cleaned data sets------------------------------------------------------
@@ -182,5 +180,5 @@ colSums(lenders != "" & !is.na(lenders)) # ok, so there's a lot of non responses
 
 
 
-
+colnames(df_clean)
 
